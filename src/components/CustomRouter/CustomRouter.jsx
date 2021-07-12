@@ -10,15 +10,19 @@ export const CustomRouter = () => {
 			<Background>
 				<CustomUl>
 					<li>
-						<CustomLink activeStyle={{ color: `blue` }} to="/">
+						<CustomLink activeStyle={{ color: `red` }} to="/">
 							<span>AboutMe</span>
 						</CustomLink>
 					</li>
 					<li>
-						<CustomLink to="/porfolio">Porfolio</CustomLink>
+						<CustomLink activeStyle={{ color: `red` }} to="/porfolio">
+							Porfolio
+						</CustomLink>
 					</li>
 					<li>
-						<CustomLink to="/contacts">Contacts</CustomLink>
+						<CustomLink activeStyle={{ color: `red` }} to="/contacts">
+							Contacts
+						</CustomLink>
 					</li>
 				</CustomUl>
 			</Background>
@@ -37,7 +41,7 @@ export const CustomRouter = () => {
 };
 
 const Background = styled.div`
-	background-color: #dedede;
+	background-color: black;
 	list-style: none;
 	border: 1px inset black;
 `;
@@ -50,5 +54,5 @@ const CustomUl = styled.ul`
 `;
 const CustomLink = styled(NavLink)`
 	text-decoration: none;
-	color: black;
+	color: white;
 `;

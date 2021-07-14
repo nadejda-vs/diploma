@@ -1,21 +1,29 @@
-import React, { useState } from 'react';
-import 'react-modern-calendar-datepicker/lib/DatePicker.css';
-import DatePicker from 'react-modern-calendar-datepicker';
-export const CalendarDay = () => {
-	const [selectedDay, setSelectedDay] = useState(null);
+import React from 'react';
+import styled from 'styled-components';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
+import 'react-day-picker/lib/style.css';
 
-	const formatInputValue = () => {
-		if (!selectedDay) return '';
-		return `Day: ${selectedDay.day}`;
-	};
+import MomentLocaleUtils, {
+	formatDate,
+	parseDate,
+} from 'react-day-picker/moment';
+
+import 'moment/locale/it';
+
+import 'moment/locale/it';
+export const CalendarDay = () => {
 	return (
-		<DatePicker
-			value={selectedDay}
-			onChange={setSelectedDay}
-			inputPlaceholder="Выберите дату" // placeholder
-			formatInputText={formatInputValue} // format value
-			inputClassName="my-custom-input" // custom class
-			shouldHighlightWeekends
-		/>
+		<div>
+			<p>Выберите дату:</p>
+		
+				<DayPickerInput
+					formatDate={formatDate}
+					parseDate={parseDate}
+					placeholder={`${formatDate(new Date())}`}
+				/>
+			
+		</div>
 	);
 };
+
+

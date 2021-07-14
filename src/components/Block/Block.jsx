@@ -1,4 +1,4 @@
-export const Div = ({ click, Texth2, textP }) => {
+export const Block = ({ click, Texth2, textP }) => {
 	return (
 		<div onClick={click}>
 			<h2>{Texth2}</h2>

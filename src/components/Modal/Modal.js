@@ -12,21 +12,19 @@ export const Modal = ({ closeModal, findId }) => {
 };
 const Background = styled.div`
 	position: fixed;
-	width: 100vw;
+	padding-left: 500px;
+
 	height: 100vh;
 	background: #000000cc;
 	top: 0;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 `;
 
 const Container = styled.div`
-	background: white;
+	background: black;
 	border-radius: 12px;
-	width: 400px;
-	height: 300px;
-	padding-top: 50px;
-	display: flex;
-	flex-direction: column;
+	width: 1200px;
+	height: 70vh;
+	flex-flow: wrap;
 `;

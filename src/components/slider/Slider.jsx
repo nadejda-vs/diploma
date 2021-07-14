@@ -11,7 +11,7 @@ export const Slider = ({ findId }) => {
 					<img
 						key={index}
 						id={item.id}
-						style={{ width: '100%' }}
+						style={{ height: '600px' }}
 						src={item.src}
 					/>
 				))}

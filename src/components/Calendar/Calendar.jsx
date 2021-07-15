@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 
@@ -15,15 +15,12 @@ export const CalendarDay = () => {
 	return (
 		<div>
 			<p>Выберите дату:</p>
-		
-				<DayPickerInput
-					formatDate={formatDate}
-					parseDate={parseDate}
-					placeholder={`${formatDate(new Date())}`}
-				/>
-			
+
+			<DayPickerInput
+				formatDate={formatDate}
+				parseDate={parseDate}
+				placeholder={`${formatDate(new Date())}`}
+			/>
 		</div>
 	);
 };
-
-

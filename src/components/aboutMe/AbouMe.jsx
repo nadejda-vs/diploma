@@ -1,8 +1,10 @@
-import { Button } from '../button/index';
-
+import { Button } from '../Button/index';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { Block } from '../Block';
+
 export const AboutMe = () => {
+	const hist = useHistory();
 	return (
 		<BodyStyled>
 			<div>
@@ -27,10 +29,18 @@ export const AboutMe = () => {
 								Живу в городе Минске, в семье из 2 человек и 1 обожаемого кота
 								:).
 							</p>
-							<Button text={'Контакты'} />
+							<Button
+								onClick={() => hist.push('/contacts')}
+								text={'Контакты'}
+							></Button>
 						</div>
 						<div>
-							<img src="/images/17.jpg" width="924px" height="500px"></img>
+							<img
+								src="/images/17.jpg"
+								width="924px"
+								height="500px"
+								alt="photos"
+							></img>
 						</div>
 					</AboutMeStyled>
 				</main>
@@ -41,22 +51,22 @@ export const AboutMe = () => {
 					<DivStyled>
 						<Container>
 							<Block
-								Texth2={'Индивидуальная съемка'}
-								textP={'Знаю как подчеркнуть достоинства и скрыть недостатки.'}
+								title={'Индивидуальная съемка'}
+								text={'Знаю как подчеркнуть достоинства и скрыть недостатки.'}
 							/>
 						</Container>
 						<Container>
 							<Block
-								Texth2={'Рекламная фотосъемка'}
-								textP={
+								title={'Рекламная фотосъемка'}
+								text={
 									'Закрываю полный цикл производства контента, от идеи до готового материала.'
 								}
 							/>
 						</Container>
 						<Container>
 							<Block
-								Texth2={'Съемка и монтаж видео'}
-								textP={
+								title={'Съемка и монтаж видео'}
+								text={
 									'Делаю промо ролики для презентации бренда, товара или услуги.'
 								}
 							/>

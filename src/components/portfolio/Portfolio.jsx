@@ -1,9 +1,5 @@
-import { GalleryPage } from '../GalleryPage';
+import { GalleryPage } from '../GallerryPage/';
 
 export const Porfolio = () => {
-	return (
-		<div>
-			<GalleryPage />
-		</div>
-	);
+	return <GalleryPage />;
 };

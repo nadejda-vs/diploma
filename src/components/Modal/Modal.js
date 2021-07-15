@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Slider } from '../slider';
+import { Slider } from '../Slider';
 export const Modal = ({ closeModal, findId }) => {
 	return (
 		<Background onClick={closeModal}>
@@ -12,19 +12,17 @@ export const Modal = ({ closeModal, findId }) => {
 };
 const Background = styled.div`
 	position: fixed;
-	padding-left: 500px;
-
+	padding-left: 100px;
 	height: 100vh;
+	width: 100%;
 	background: #000000cc;
 	top: 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 `;
 
 const Container = styled.div`
-	background: black;
-	border-radius: 12px;
-	width: 1200px;
-	height: 70vh;
-	flex-flow: wrap;
+	width: 60%; 
+	height: 100%; 
 `;

@@ -1,6 +1,5 @@
-import { CalendarDay } from '../Calendar';
 import styled from 'styled-components';
-
+import { Form } from '../Form';
 export const Contacts = () => {
 	return (
 		<div>
@@ -10,7 +9,7 @@ export const Contacts = () => {
 					<Block>
 						<div>
 							<p>
-								Чтобы закать услуги фотографа, Вы можете связаться со мной любым
+								Чтобы заказать услуги фотографа, Вы можете связаться со мной любым
 								удобным для Вас способом. Я всегда открыта к общению и рада
 								сотрудничеству, рассмотрю Ваши интересные идеи или предложения!
 							</p>
@@ -19,19 +18,15 @@ export const Contacts = () => {
 					<Block>
 						<div>
 							<p>Email</p>
-							<StyledA>
-								<a href="mailto:voronevskaya.com@gmail.com">
-									voronevskaya.com@gmail.com
-								</a>
+							<StyledA href="mailto:voronevskaya.com@gmail.com">
+								voronevskaya.com@gmail.com
 							</StyledA>
 							<p>Телефон</p>
-							<StyledA>
-								<a href="tel:+375445379760">+375 (44) 537-97-60</a>
-							</StyledA>
+							<StyledA href="tel:+375445379760">+375 (44) 537-97-60 </StyledA>
 						</div>
 					</Block>
 				</Container>
-				<CalendarDay />
+				<Form />
 			</Main>
 		</div>
 	);
@@ -58,11 +53,6 @@ const Main = styled.div`
 	font-size: 46px;
 `;
 const StyledA = styled.a`
-	a:hover,
-	a:visited,
-	a:link,
-	a:active {
-		color: black;
-		text-decoration: none;
-	}
+	color: black;
+	text-decoration: none;
 `;

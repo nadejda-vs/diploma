@@ -80,7 +80,7 @@ export const AboutMe = () => {
 const BodyStyled = styled.div`
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	color: #636363;
 	text-align: center !important;
 `;
@@ -97,6 +97,7 @@ const DivStyled = styled.div`
 	& :hover {
 		color: white;
 		background-color: red;
+		cursor: pointer;
 	}
 `;
 const AboutMeStyled = styled.div`
@@ -111,6 +112,7 @@ const AboutMeStyled = styled.div`
 const H1Styled = styled.h1`
 	text-align: center;
 	margin-top: 50px;
+
 	color: #252525;
 	line-height: 1.3;
 	font-weight: 600;
@@ -118,7 +120,6 @@ const H1Styled = styled.h1`
 const Container = styled.div`
 	text-align: center;
 	padding: 0px 30px 30px;
-	margin-top: 50px;
 	border-radius: 10px;
 	flex-wrap: nowrap;
 `;

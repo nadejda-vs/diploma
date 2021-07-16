@@ -1,7 +1,7 @@
-import React from 'react';
-
-import DayPickerInput from 'react-day-picker/DayPickerInput';
-import 'react-day-picker/lib/style.css';
+import React, { forwardRef, useState } from 'react';
+import styled from 'styled-components';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 import MomentLocaleUtils, {
 	formatDate,
@@ -10,17 +10,27 @@ import MomentLocaleUtils, {
 
 import 'moment/locale/it';
 
-import 'moment/locale/it';
 export const CalendarDay = () => {
+	const [startDate, setStartDate] = useState(new Date());
+	const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+		<button className="example-custom-input" onClick={onClick} ref={ref}>
+			{value}
+		</button>
+	));
 	return (
-		<div>
-			<p>Выберите дату:</p>
-
-			<DayPickerInput
-				formatDate={formatDate}
-				parseDate={parseDate}
-				placeholder={`${formatDate(new Date())}`}
-			/>
-		</div>
+		<DatePicker
+			selected={startDate}
+			onChange={(date) => setStartDate(date)}
+			customInput={<Input />}
+		/>
 	);
 };
+const Container = styled.div`
+	color: #252525;
+	line-height: 1.3;
+`;
+const Input = styled.input`
+	width: 154px;
+	text-align: center;
+	font-size: 16px;
+`;

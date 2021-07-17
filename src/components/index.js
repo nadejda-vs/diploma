@@ -1,4 +1,4 @@
 export * from './CustomRouter';
-export * from './aboutMe';
-export * from './contacts';
-export * from './portfolio';
+export * from './AboutMe';
+export * from './Contacts';
+export * from './Porfolio';

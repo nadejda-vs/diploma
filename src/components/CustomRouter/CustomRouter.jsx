@@ -5,6 +5,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { AboutMe, Porfolio, Contacts } from '../index';
 import { useHistory } from 'react-router-dom';
 export const CustomRouter = () => {
+	
 	const hist = useHistory();
 	return (
 		<Router>

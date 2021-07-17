@@ -18,7 +18,11 @@ export const photos = [
 	{ id: 16, src: '/images/18.jpg', width: 4, height: 3 },
 	{ id: 17, src: '/images/19.jpg', width: 4, height: 3 },
 	{ id: 18, src: '/images/20.jpg', width: 4, height: 3 },
-	{ id: 19, src: '/images/21.jpg', width: 4, height: 3 },
+	{ id: 19, src: '/images/35.jpg', width: 4, height: 3 },
+
 	{ id: 20, src: '/images/31.jpg', width: 4, height: 3 },
-	{ id: 21, src: '/images/35.jpg', width: 4, height: 3 },
+	{ id: 21, src: '/images/21.jpg', width: 4, height: 3 },
+	{ id: 22, src: '/images/46.jpg', width: 4, height: 3 },
+	{ id: 23, src: '/images/47.jpg', width: 4, height: 3 },
+	{ id: 24, src: '/images/istanbul25.jpg', width: 4, height: 3 },
 ];

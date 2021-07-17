@@ -33,4 +33,5 @@ const Input = styled.input`
 	width: 154px;
 	text-align: center;
 	font-size: 16px;
+	position: sticky;
 `;

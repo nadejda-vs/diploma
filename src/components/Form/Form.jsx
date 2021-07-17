@@ -15,8 +15,8 @@ export const Form = () => {
 	};
 	return (
 		<div>
-			{isOpenModal ? <PopUp closeModal={closeModal} /> : null}
 			<Container>
+				{isOpenModal ? <PopUp closeModal={closeModal} /> : null}
 				<h6>Оставьте заявку и мы Вам перезвоним</h6>
 				<Block>Выберите дату планируемого мероприятия</Block>
 				<CalendarDay />
@@ -25,7 +25,6 @@ export const Form = () => {
 				<Block>Введите Ваш телефон:</Block>
 				<input type="tel" name="tel" size="20" />
 				<br></br>
-
 				<Button onClick={onClick} text={'Оставить заявку'}></Button>
 			</Container>
 		</div>

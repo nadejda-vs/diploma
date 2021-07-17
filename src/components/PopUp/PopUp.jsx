@@ -3,21 +3,26 @@ export const PopUp = ({ closeModal }) => {
 	return (
 		<Background onClick={closeModal}>
 			<Container onClick={(event) => event.stopPropagation()}>
-				<div>Ваша заявка принята, в ближайшее время мы Вам перезвоним</div>
+				<div>
+					Спасибо , что оставили заявку. В ближайшее время мы Вам перезвоним
+				</div>
 			</Container>
 		</Background>
 	);
 };
 const Background = styled.div`
-	/* position: fixed; */
-	/* width: 100%; */
-	background: #302a2acc;
-	/* top: 0;
-	display: flex;
-	justify-content: center; */
+	position: absolute;
+	background: #bebebc;
+	padding-top: 70px;
+	/* justify-content: center; */
+	opacity: 0.9;
+	width: 400px;
+	height: 485px;
+	border-radius: 5%;
+	z-index: 5;
 `;
 
 const Container = styled.div`
 	/* width: 60%; */
-	height: 100%;
+	/* height: 100%; */
 `;

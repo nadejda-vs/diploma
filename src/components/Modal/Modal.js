@@ -12,18 +12,16 @@ export const Modal = ({ closeModal, findId }) => {
 	);
 };
 const Background = styled.div`
-	position: relative;
-	top: 40px;
-	left: 40px;
-	z-index: 6;
+	position: fixed;
+
 	width: 100%;
 	background: #000000cc;
 	top: 0;
-	/* display: flex; */
-	/* justify-content: center; */
+	display: flex;
+	justify-content: center;
 `;
 
 const Container = styled.div`
-	width: 100%;
+	width: 60%;
 	height: 100%;
 `;

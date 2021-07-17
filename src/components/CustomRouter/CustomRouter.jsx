@@ -65,9 +65,9 @@ const Background = styled.div`
 	width: 100%;
 	list-style: none;
 	background: rgba(77, 81, 100, 0.5);
-	font-size: 20px;
+	font-size: 16px;
 	position: fixed;
-	z-index: 5;
+	z-index: 3;
 	display: flex;
 	justify-content: space-between;
 	padding-left: 35px;

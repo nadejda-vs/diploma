@@ -14,7 +14,7 @@ const Background = styled.div`
 	position: absolute;
 	background: #bebebc;
 	padding-top: 70px;
-	/* justify-content: center; */
+
 	opacity: 0.9;
 	width: 400px;
 	height: 485px;

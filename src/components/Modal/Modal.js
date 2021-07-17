@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import ImageSlider from '../Slider/ImageSlider';
+import ImageSlider from '../slider/ImageSlider';
 import { photos } from '../photos';
 export const Modal = ({ closeModal, findId }) => {
 	return (

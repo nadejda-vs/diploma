@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Form } from '../Form';
+import { Form } from '../form';
 export const Contacts = () => {
 	return (
 		<div>

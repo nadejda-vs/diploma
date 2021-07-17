@@ -1,6 +1,6 @@
 import React from 'react';
-import { Modal } from '../Modal';
-import { Gallery } from '../Gallery';
+import { Modal } from '../modal';
+import { Gallery } from '../gallery';
 import { photos } from '../photos';
 import { useState } from 'react';
 import styled from 'styled-components';

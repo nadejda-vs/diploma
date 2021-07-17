@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { CalendarDay } from '../Calendar';
-import { Button } from '../Button';
-import { PopUp } from '../PopUp';
+import { CalendarDay } from '../calendar';
+import { Button } from '../button';
+import { PopUp } from '../popUp';
 import { useState } from 'react';
 
 // import ReactDOM from 'react-dom';

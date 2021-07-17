@@ -1,7 +1,7 @@
-import { Button } from '../Button/index';
+import { Button } from '../button/index';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { Block } from '../Block';
+import { Block } from '../block';
 
 export const AboutMe = () => {
 	const hist = useHistory();
